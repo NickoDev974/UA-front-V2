@@ -4,6 +4,7 @@ import react from "@vitejs/plugin-react";
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
+  base: "/UA-front-V2/",
   //trois ligne pour IDE sinon cela ne fonctionne pas
   //  server: {
   //   port: 9000,
