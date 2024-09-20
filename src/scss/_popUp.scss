@@ -1,0 +1,40 @@
+.popUp {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(72, 209, 205);
+  border: solid 3px mediumturquoise;
+  border-radius: 10px;
+  box-shadow: black 1px 1px 25px;
+  transition: transform 3s ease, opacity 0.5s ease;
+
+  &.closing {
+    transform: translate(-50%, -100%) scale(0);
+    opacity: 0;
+  }
+  .closePopUp {
+    text-align: end;
+    margin: 1rem;
+    cursor: pointer;
+  }
+  .sectionPopUp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .textePopUp {
+      text-align: center;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-size: large;
+    }
+    .msg {
+      text-align: center;
+      font-style: italic;
+    }
+    button {
+      justify-content: center;
+      cursor: pointer;
+    }
+  }
+}

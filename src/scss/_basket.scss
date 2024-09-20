@@ -1,0 +1,53 @@
+.basket {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h2 {
+    color: color(bleu);
+    font-size: 3rem;
+    text-align: center;
+    font-family: cursive;
+    font-weight: bold;
+    font-style: italic;
+  }
+  .basketTable {
+    margin: 1rem;
+    border: color(bleu) 3px solid;
+    border-radius: 20px;
+    box-shadow: color(noir) 10px 10px 5px;
+  }
+  table {
+    td {
+      text-align: center;
+    }
+
+    button {
+      display: flex;
+      justify-content: center;
+      width: 10px;
+      background-color: color(bleu);
+    }
+    .removeBasket {
+      display: flex;
+      justify-content: center;
+      background-color: rgba(0, 0, 255, 0.583);
+    }
+    .clean-button {
+      display: flex;
+
+      width: 180px;
+      background-color: rgba(0, 0, 255, 0.583);
+      justify-content: center;
+    }
+  }
+  button {
+    margin: 1rem;
+  }
+  #basketEmpty {
+    text-align: center;
+    img {
+      margin: 2rem;
+      width: 25%;
+    }
+  }
+}

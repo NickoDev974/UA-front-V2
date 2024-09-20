@@ -1,0 +1,14 @@
+section {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+  .titreCgv {
+    margin-top: 5rem;
+    color: color(bleu);
+  }
+  p {
+    margin: 2rem;
+    text-align: justify;
+  }
+}

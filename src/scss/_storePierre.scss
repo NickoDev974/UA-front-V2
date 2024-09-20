@@ -1,0 +1,133 @@
+@keyframes reveal {
+  from {
+    transform: scale(0);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.pierre {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  #photoPresentation {
+    width: 100%;
+    height: auto;
+  }
+  li a {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: space-around;
+  }
+  section {
+    display: flex;
+    flex-direction: column;
+
+    article {
+      border-bottom: solid 2px color(bleu);
+      display: flex;
+      flex-direction: column;
+      img {
+        width: 100%;
+        margin: 1rem 0;
+        box-shadow: 10px 10px 10px black;
+        object-fit: cover;
+        //animation: reveal 1s linear;
+        animation: reveal 3s ease-in-out;
+        animation-timeline: view();
+        animation-range-start: cover 0%;
+        animation-range-end: contain 50%;
+      }
+      h3 {
+        color: color(bleu);
+        text-align: center;
+      }
+      h4 {
+        font-style: italic;
+      }
+      p {
+        text-align: justify;
+      }
+    }
+  }
+  .sliderPierre {
+    margin: 1rem auto;
+
+    width: 90%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    // gap: 1rem;
+    img {
+      margin: 0;
+      width: 5%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 10px;
+      border: 2px solid color(bleu);
+      transition: all ease-in-out 0.5s;
+    }
+    img:hover {
+      width: 90%;
+    }
+  }
+  .presentation {
+    h2 {
+      color: color(bleu);
+      font-size: 3rem;
+      text-align: center;
+    }
+    ul {
+      display: flex;
+      justify-content: center;
+      li {
+        list-style-type: none;
+        margin: 0 1rem;
+      }
+    }
+    img {
+      width: 3rem;
+    }
+    video {
+      width: 100%;
+      box-shadow: 2px 10px 10px black;
+      border: 10px black solid;
+      border-radius: 30px;
+      margin-bottom: 1rem;
+    }
+    a {
+      text-decoration: none;
+      color: color(bleu);
+      font-weight: bold;
+    }
+  }
+}
+
+@media screen and (min-width: 465px) {
+  .pierre .presentation ul li {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .pierre .presentation {
+    margin-top: 4rem;
+    ul li {
+      text-align: center;
+    }
+  }
+  .pierre section article div {
+    display: flex;
+
+    flex-direction: row;
+    justify-content: center;
+    img {
+      margin: 2rem;
+      width: 25%;
+    }
+  }
+}

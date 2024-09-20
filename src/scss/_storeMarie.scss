@@ -1,0 +1,96 @@
+.storeMarie {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+
+  .presentation {
+    ul {
+      flex-wrap: nowrap;
+    }
+    li a {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+      justify-content: space-around;
+    }
+    h2 {
+      padding: 2rem;
+      color: color(bleu);
+      font-size: 3rem;
+      text-align: center;
+    }
+    ul {
+      display: flex;
+      justify-content: center;
+      li {
+        list-style-type: none;
+        margin: 0 1rem;
+        a {
+          text-decoration: none;
+          color: color(bleu);
+          font-size: large;
+        }
+      }
+    }
+    img {
+      width: 3rem;
+    }
+  }
+}
+
+.carousel {
+  // margin: 5rem;
+  // padding: 3rem;
+  position: relative;
+  width: 90%;
+  height: auto;
+  display: flex;
+  align-items: flex-start;
+}
+
+.slide {
+  flex: 0.5;
+  overflow: hidden;
+}
+
+.slide img {
+  width: 100%;
+  height: auto;
+}
+
+.control {
+  position: absolute;
+  font-size: 3rem;
+  top: 50%;
+  height: 100%;
+  transform: translateY(-50%);
+  background-color: transparent;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.prev {
+  left: 0;
+}
+
+.next {
+  right: 0;
+}
+
+@media screen and (min-width: 769px) {
+  .carousel {
+    .slide {
+      max-width: 600px;
+      border-radius: 10px;
+      //max-height: 500px;
+      justify-content: center;
+
+      //background-color: black;
+      // img {
+      //   max-width: auto;
+      //   max-height: 80%;
+      // }
+    }
+  }
+}

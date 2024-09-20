@@ -1,0 +1,105 @@
+.admin {
+  padding: 1rem;
+  text-align: center;
+  //-------------------menu admin-----------------------
+  .navAdmin {
+    padding: 1rem;
+    left: 0;
+    background-color: #2c41a9;
+    width: 100%;
+    height: 6rem;
+  }
+
+  .navAdmin ul {
+    justify-content: center;
+    flex-wrap: nowrap;
+
+    padding: 0;
+    margin: 0;
+  }
+
+  .navAdmin ul li {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    position: relative;
+  }
+
+  .navAdmin ul li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #2c41a9;
+  }
+  li {
+    color: color(blanc);
+  }
+  .navAdmin ul li:hover ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .navAdmin ul li ul li {
+    display: flex;
+    width: 12rem;
+    border: rgb(2, 2, 2) 1px solid;
+  }
+
+  //----------------------------------------------------
+  h2 {
+    color: color(bleu);
+    font-size: 3rem;
+  }
+  td a {
+    color: color(bleu);
+    font-weight: bold;
+    text-decoration: none;
+  }
+  article {
+    border: solid color(bleu) 5px;
+    margin: 1rem;
+    h3 {
+      color: color(bleu);
+      font-size: 2rem;
+    }
+    h4 {
+      font-size: 2rem;
+    }
+
+    div .tableProduct {
+      width: 100%;
+      border: 2px solid color(bleu);
+    }
+    div .tableProduct-first {
+      width: 100%;
+      border: 2px solid color(bleu);
+      td button a {
+        color: white;
+      }
+    }
+    table {
+      width: 100%;
+    }
+    th {
+      background-color: grey;
+    }
+    td {
+      border-bottom: grey solid 1px;
+    }
+
+    button {
+      margin: 0.5rem;
+      a {
+        text-decoration: none;
+        color: color(blanc);
+      }
+    }
+
+    .icone {
+      font-size: 4rem;
+      margin-bottom: 1rem;
+      color: blue;
+    }
+  }
+}

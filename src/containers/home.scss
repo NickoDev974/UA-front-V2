@@ -1,0 +1,147 @@
+.home {
+  h2,
+  h3,
+  h4 {
+    color: blue;
+    font-weight: bold;
+  }
+  h2 {
+    background-color: aliceblue;
+    padding: 2rem;
+  }
+
+  img {
+    max-width: 400px;
+  }
+  .brandLogo {
+    max-width: 100px;
+  }
+  .logoDiv {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .brandLogo {
+    width: 8rem;
+    margin-bottom: 2rem;
+    border-radius: 0 10px 0 10px;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+  }
+  .brandLogo:hover {
+    transform: scale(2);
+  }
+  ul {
+    list-style-type: none;
+  }
+  .Shops li {
+    border: solid 5px blue;
+    border-radius: 20px;
+    box-shadow: inset black 5px 5px 10px;
+    img {
+      max-width: 95%;
+    }
+    button {
+      margin: 1rem;
+      font-size: large;
+      font-weight: bold;
+      color: white;
+    }
+  }
+  //------------------tablette ----------------------------
+  @media screen and (min-width: 426px) {
+    body {
+      width: 768px;
+    }
+    h2 {
+      text-shadow: rgb(73, 72, 72) 5px 5px 10px;
+    }
+    img {
+      max-width: 760px;
+    }
+    .article1 {
+      position: relative;
+      text-align: left;
+    }
+
+    .article1 h3 {
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+
+    .article1 img {
+      width: 100%; /* L'image prend toute la largeur de l'écran */
+      height: auto; /* Conserve les proportions de l'image */
+    }
+
+    .article1 p {
+      position: absolute; /* Positionne le texte sur l'image */
+      top: 10%; /* Ajuste la position verticale du texte */
+      right: 5%; /* Ajuste la position horizontale du texte */
+      color: white; /* Texte en blanc */
+      width: 40%; /* Largeur du paragraphe sur l'image (peut être ajustée) */
+      background-color: rgba(
+        0,
+        0,
+        0,
+        0.7
+      ); /* Optionnel : fond semi-transparent pour une meilleure lisibilité */
+      padding: 1rem; /* Ajoute un peu de padding autour du texte */
+      box-sizing: border-box;
+    }
+    .article2 ul img {
+      max-width: 95%;
+    }
+    .Shops li {
+      margin: 1rem;
+      box-shadow: none;
+      box-shadow: grey 10px 10px 10px;
+    }
+    hr {
+      display: none;
+    }
+    .article5 {
+      position: relative;
+      text-align: left;
+    }
+
+    .article5 h3 {
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+
+    .article5 img {
+      width: 100%; /* L'image prend toute la largeur de l'écran */
+      height: auto; /* Conserve les proportions de l'image */
+    }
+
+    .article5 p {
+      position: absolute; /* Positionne le texte sur l'image */
+      top: 10%; /* Ajuste la position verticale du texte */
+      right: 5%; /* Ajuste la position horizontale du texte */
+      color: white; /* Texte en blanc */
+      width: 50%; /* Largeur du paragraphe sur l'image (peut être ajustée) */
+      background-color: rgba(
+        0,
+        0,
+        0,
+        0.7
+      ); /* Optionnel : fond semi-transparent pour une meilleure lisibilité */
+      padding: 1rem; /* Ajoute un peu de padding autour du texte */
+      box-sizing: border-box;
+    }
+  }
+  //-----------Ordi----------------
+  @media screen and (min-width: 769px) {
+    body {
+      width: 1440px;
+    }
+    img {
+      max-width: 100%;
+    }
+    .Shops {
+      li {
+        margin: 2rem;
+      }
+    }
+  }
+}

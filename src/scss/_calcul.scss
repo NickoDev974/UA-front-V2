@@ -1,0 +1,99 @@
+.calcul img {
+  width: 50%;
+}
+.calcul {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 2rem;
+  h1 {
+    color: color(bleu);
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    font-size: 3rem;
+  }
+  h2 {
+    background-color: rgba(127, 255, 212, 0.622);
+    font-size: 2rem;
+    border: solid black 2px;
+    border-radius: 5px;
+  }
+  h3 {
+    font-size: 1.5rem;
+    border: solid black 2px;
+    border-radius: 5px;
+  }
+  label {
+    font-size: 1.3rem;
+    font-style: italic;
+  }
+  input {
+    color: color(bleu);
+    font-weight: bold;
+    background-color: rgba(222, 222, 222, 0.695);
+    margin: 2px;
+    text-align: center;
+  }
+  p {
+    color: color(bleu);
+  }
+
+  span {
+    color: color(rouge);
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    font-weight: bold;
+  }
+  button {
+    margin: 1rem;
+  }
+  .volumeAqua {
+    display: flex;
+    flex-direction: column;
+    div {
+      display: flex;
+      flex-direction: column;
+      margin: 1rem;
+      align-items: center;
+    }
+  }
+  .dosage div {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    align-items: center;
+  }
+  .dosage input {
+    width: 70%;
+  }
+}
+
+@media screen and (min-width: 425px) {
+  .dosage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    div {
+      align-items: center;
+      width: 60%;
+    }
+  }
+  .volume {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .volumeAqua {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+    }
+    img {
+      align-items: center;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .calcul .dosage input {
+    width: 50%;
+  }
+}

@@ -1,0 +1,21 @@
+// ici on va faire les couleur et fonctions ...
+
+@function color($name) {
+  @if $name == bleu {
+    @return blue;
+  } @else if $name == blanc {
+    @return #ffff;
+  } @else if $name == rouge {
+    @return #fa0101;
+  } @else if $name == noir {
+    @return black;
+  } @else if $name == form {
+    @return rgba(0, 255, 255, 0.496);
+  } @else {
+    @return yellow;
+  }
+}
+
+@mixin shadow {
+  box-shadow: black 5px 5px 20px;
+}

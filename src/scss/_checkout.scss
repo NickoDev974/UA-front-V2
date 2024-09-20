@@ -1,0 +1,50 @@
+.payment {
+  p {
+    margin: 5px;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  h2 {
+    color: color(bleu);
+    font-size: 3rem;
+    text-align: center;
+  }
+  .paraPayment {
+    margin: 1rem;
+    padding: 1rem;
+    font-family: cursive;
+  }
+  strong {
+    font-size: 30px;
+    font-weight: bold;
+    color: color(bleu);
+  }
+}
+
+.checkout {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  //cacher la partie payement par carte en css pour le moment
+  .card {
+    display: none;
+  }
+  div {
+    text-align: center;
+    margin: 2rem;
+    border: solid 2px color(bleu);
+    border-radius: 10px;
+    box-shadow: black 5px 5px 5px;
+    .card {
+      text-align: center;
+    }
+  }
+  button {
+    margin: 1rem;
+  }
+  p {
+    padding: 1rem;
+  }
+}

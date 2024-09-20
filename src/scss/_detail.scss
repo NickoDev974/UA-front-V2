@@ -1,0 +1,43 @@
+.orderDetail {
+  margin: 2rem 0;
+  article {
+    margin: 1rem;
+    border: blue solid 2px;
+  }
+  .top {
+    margin-top: 3rem;
+    .lienRetour {
+      color: color(bleu);
+    }
+    a {
+      text-decoration: none;
+      font-weight: bold;
+      color: colo(bleu);
+    }
+  }
+  table {
+    width: 100%;
+    border: solid blue 2px;
+    th {
+      background-color: grey;
+      border: solid blue 2px;
+    }
+    td {
+      border-bottom: solid 1px blue;
+    }
+    tfoot {
+      text-align: center;
+      tr td {
+        background-color: rgb(255, 140, 0);
+      }
+    }
+  }
+  .user {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  button {
+    text-align: center;
+    margin: 2rem;
+  }
+}

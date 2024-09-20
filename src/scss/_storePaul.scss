@@ -1,0 +1,80 @@
+.paul {
+  img {
+    width: 95%;
+    box-shadow: black 5px 5px 5px;
+    margin-bottom: 2rem;
+  }
+  h3 {
+    color: color(bleu);
+  }
+  // article {
+  //   @include shadow;
+  //   margin: 2rem;
+  //   border: solid 2px color(bleu);
+  //   border-radius: 10px;
+  // }
+
+  .presentationPaul {
+    //border: solid 2px color(bleu);
+    h2 {
+      color: color(bleu);
+      font-size: 3rem;
+      text-align: center;
+    }
+    ul {
+      display: flex;
+      justify-content: center;
+      flex-wrap: nowrap;
+
+      li {
+        list-style-type: none;
+        margin: 0 1rem;
+      }
+    }
+    .logo {
+      width: 3rem;
+      box-shadow: none;
+    }
+    li a {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+      justify-content: space-around;
+    }
+
+    a {
+      text-decoration: none;
+      color: color(bleu);
+      font-weight: bold;
+    }
+    .presentation-picture {
+      width: 95%;
+      border: solid 6px black;
+    }
+  }
+  .sliderPaul {
+    margin: 1rem auto;
+
+    width: 95%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    img {
+      width: 10%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 10px;
+      border: 2px solid color(bleu);
+      transition: all ease-in-out 0.5s;
+    }
+    img:hover {
+      width: 70%;
+    }
+  }
+}
+@media screen and (min-width: 769px) {
+  .paul .presentationPaul {
+    margin-top: 4rem;
+  }
+}
