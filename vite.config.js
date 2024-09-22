@@ -4,7 +4,7 @@ import react from "@vitejs/plugin-react";
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: "/UA-front-V2/", // Assurez-vous que ceci est correct
+  base: "/UA-front-V2/",
   assetsInclude: [
     "**/*.jpg",
     "**/*.jpeg",
@@ -12,5 +12,5 @@ export default defineConfig({
     "**/*.gif",
     "**/*.svg",
     "**/*.JPG",
-  ], // Ajoutez cette ligne
+  ],
 });
