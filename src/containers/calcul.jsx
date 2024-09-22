@@ -79,10 +79,10 @@ const Calcul = () => {
 
   return (
     <section className="calcul">
-      <h1>Aide aux calculs</h1>
+      <h2>Aide aux calculs</h2>
       {/* Traitements */}
       <article className="dosage">
-        <h2>Calcul du dosage de médicament pour l'aquarium</h2>
+        <h3>Calcul du dosage de médicament pour l'aquarium</h3>
         <img src={calculDose} alt="calcul du dosage traitement" />
         {dosageFinal !== "" && (
           <p>
@@ -128,11 +128,11 @@ const Calcul = () => {
       </article>
       {/* Volumes  */}
       <article className="volume">
-        <h2>Calcul du volume</h2>
+        <h3>Calcul du volume</h3>
         <img src={CalculVolumeAquarium} alt="calcul volume d'un aquarium" />
         <div className="volumeAqua">
           <div>
-            <h3>Calcul pour aquarium rectangulaire</h3>
+            <h4>Calcul pour aquarium rectangulaire</h4>
             <img src={aquaRectang} alt="calcul volume d'un pavé" />
             {volumeRectangular !== null && (
               <p>
@@ -172,7 +172,7 @@ const Calcul = () => {
           </div>
 
           <div>
-            <h3>Calcul pour aquarium cylindrique</h3>
+            <h4>Calcul pour aquarium cylindrique</h4>
             <img
               className="imgAquar"
               src={aquaCilind}

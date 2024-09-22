@@ -3,12 +3,20 @@ section {
   flex-direction: column;
   text-align: center;
 
-  .titreCgv {
-    margin-top: 5rem;
+  h2 {
     color: color(bleu);
   }
   p {
     margin: 2rem;
     text-align: justify;
+  }
+
+  @media screen and (min-width: 443px) {
+    h2 {
+      margin-top: 7rem;
+    }
+    p {
+      margin-top: 7rem;
+    }
   }
 }

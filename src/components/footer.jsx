@@ -2,6 +2,7 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPhone } from "@fortawesome/free-solid-svg-icons";
 import CGV from "../containers/cgv";
+import { Link } from "react-router-dom";
 
 //import images
 
@@ -51,16 +52,16 @@ const Footer = () => {
             <h2>Liens utiles</h2>
             <ul>
               <li>
-                <a href="/">Accueil</a>
+                <Link to="/">Accueil</Link>
               </li>
               <li>
-                <a href="/product">Produits</a>
+                <Link to="/product">Produits</Link>
               </li>
               <li>
-                <a href="/contact">Contact</a>
+                <Link to="/contact">Contact</Link>
               </li>
               <li>
-                <a href="/cgv">CGV</a>
+                <Link to="/cgv">CGV</Link>
               </li>
             </ul>
           </div>

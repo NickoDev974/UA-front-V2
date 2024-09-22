@@ -3,7 +3,7 @@ import React from "react";
 const CGV = () => {
   return (
     <section>
-      <h1 className="titreCgv">Conditions Générales de Vente</h1>
+      <h2 className="titreCgv">Conditions Générales de Vente</h2>
       <p>
         1. Champ d'application <br />
         <br />

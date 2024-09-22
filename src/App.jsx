@@ -24,7 +24,8 @@ import RequireAuth from "./helpers/require-auth";
 import AddCategory from "./containers/admin/category/addCategory";
 import Calcul from "./containers/calcul";
 import Contact from "./containers/contact";
-import CGV from "./containers/cgv";
+import Cgv from "./containers/cgv";
+
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 function App() {
@@ -46,7 +47,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/register" element={<Register />} />
         <Route path="/login" element={<Login />} />
-        <Route path="/cgv" element={<CGV />} />
+        <Route path="/cgv" element={<Cgv />} />
         <Route
           path="/profil"
           element={<RequireAuth child={Profil} auth={true} admin={false} />}
