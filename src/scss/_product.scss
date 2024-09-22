@@ -1,3 +1,7 @@
+.construction {
+  width: 100%;
+  height: auto;
+}
 .detail {
   display: flex;
   flex-direction: column;
@@ -9,7 +13,7 @@
     text-decoration: none;
   }
 
-  h2 {
+  h3 {
     text-align: center;
     color: color(bleu);
     font-size: 2rem;

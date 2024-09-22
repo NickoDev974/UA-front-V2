@@ -1,6 +1,24 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+//image import
+import plantesBassin from "/src/assets/images/plantesBassin.JPG";
+import IMG_5785 from "/src/assets/images/IMG_5785.JPG";
+import videoAnemone from "/src/assets/images/videoAnemone.gif";
+import aquascape12 from "/src/assets/images/Aquascape1.jpg";
+import IMG_4959 from "/src/assets/images/IMG_4959.JPG";
+import planteBassin1 from "/src/assets/images/planteBassin1.JPG";
+import lechat from "/src/assets/images/leChat.JPG";
+import LogoChihiros from "/src/assets/images/LogoChihiros.jpg";
+import LogoJBL from "/src/assets/images/LogoJBL.jpeg";
+import LogoOase from "/src/assets/images/LogoOase.jpg";
+import testEau from "/src/assets/images/testEau.jpg";
+import testEau2 from "/src/assets/images/testEau2.jpg";
+import BassinDD from "/src/assets/images/bassinDD.jpg";
+import bassinCascade from "/src/assets/images/bassinCascade.jpg";
+import saintpaul from "/src/assets/images/saint-paul.jpg";
+import saintemarie from "/src/assets/images/sainte-marie.jpg";
+
 const Home = (props) => {
   const handleImageClick = (event) => {
     const img = event.target;
@@ -36,7 +54,7 @@ const Home = (props) => {
             l'année.
           </p>
           <img
-            src="../../src/assets/images/plantesBassin.JPG"
+            src={plantesBassin}
             alt="Espace bassin du magasin de saint pierre "
             className="enlargeable"
             onClick={handleImageClick}
@@ -68,7 +86,7 @@ const Home = (props) => {
                 expérimentés.
               </p>
               <img
-                src="../../src/assets/images/IMG_5785.JPG"
+                src={IMG_5785}
                 alt="montage de 6 poisson combatant de couleurs differentes"
                 className="enlargeable"
                 onClick={handleImageClick}
@@ -85,7 +103,7 @@ const Home = (props) => {
                 florissant.
               </p>
               <img
-                src="../../src/assets/images/videoAnemone.gif"
+                src={videoAnemone}
                 alt="gif d'une anémone avec ses poisson clown"
                 className="enlargeable"
                 onClick={handleImageClick}
@@ -101,7 +119,7 @@ const Home = (props) => {
                 aquarium en une véritable œuvre d'art vivante.
               </p>
               <img
-                src="../../src/assets/images/aquascape1.jpg"
+                src={aquascape12}
                 alt="Un aquarium d'eposition en aquascape du magasin de saint pierre "
                 className="enlargeable"
                 onClick={handleImageClick}
@@ -119,7 +137,7 @@ const Home = (props) => {
                 votre environnement extérieur.
               </p>
               <img
-                src="../../src/assets/images/IMG_4959.JPG"
+                src={IMG_4959}
                 alt="les bassins de vente du magasin de saint pierre "
                 className="enlargeable"
                 onClick={handleImageClick}
@@ -135,7 +153,7 @@ const Home = (props) => {
                 biodiversité locale.
               </p>
               <img
-                src="../../src/assets/images/planteBassin1.jpg"
+                src={planteBassin1}
                 alt="Mur végétal d'exposition du magasin de saint pierre "
                 className="enlargeable"
                 onClick={handleImageClick}
@@ -152,7 +170,7 @@ const Home = (props) => {
                 pattes.
               </p>
               <img
-                src="../../src/assets/images/lechat.jpg"
+                src={lechat}
                 alt="Un chat sur une terrasse "
                 className="enlargeable"
                 onClick={handleImageClick}
@@ -171,23 +189,12 @@ const Home = (props) => {
             filtre, bâche...).
           </p>
           <div className="logoDiv">
-            <img
-              className="brandLogo"
-              src="../../src/assets/images/LogoChihiros.jpg"
-              alt="logo chihiros"
-            />
-            <img
-              className="brandLogo"
-              src="../../src/assets/images/LogoJBL.jpeg"
-              alt="logo JBL"
-            />
-            <img
-              className="brandLogo"
-              src="../../src/assets/images/LogoOase.jpg"
-              alt="logo oase"
-            />
+            <img className="brandLogo" src={LogoChihiros} alt="logo chihiros" />
+            <img className="brandLogo" src={LogoJBL} alt="logo JBL" />
+            <img className="brandLogo" src={LogoOase} alt="logo oase" />
           </div>
         </article>
+        {/* ici pour continuer  */}
         <article className="article4">
           <h3>Le suivi et contrôle gratuits pour tous les clients</h3>
           <p>
@@ -199,12 +206,12 @@ const Home = (props) => {
           <div className="logoDiv">
             <img
               className="brandLogo "
-              src="../../src/assets/images/testEau.jpg"
+              src={testEau}
               alt="test eau bandelettes devant un aquarium"
             />
             <img
               className="brandLogo "
-              src="../../src/assets/images/testEau2.jpg"
+              src={testEau2}
               alt="malette de test a goute "
             />
           </div>
@@ -220,7 +227,7 @@ const Home = (props) => {
             contemporains, le choix de la filtration jusqu'à la mise en eau.
           </p>
           <img
-            src="../../src/assets/images/BassinDD.jpg"
+            src={BassinDD}
             alt="Une de nos realisation de bassin chez un client"
             className="enlargeable"
             onClick={handleImageClick}
@@ -231,13 +238,13 @@ const Home = (props) => {
           <br />
           <ul>
             <li>
-              <a href="/storePierre">
-                <button>Saint-pierre</button>
-              </a>
+              <Link to="/storePierre">
+                <button>Saint-Pierre</button>
+              </Link>
               <p>📬 11 rue Benjamin HOAREAU 97410</p>
               <p>📞 0262 39 64 99</p>
               <img
-                src="../../src/assets/images/bassinCascade.jpg"
+                src={bassinCascade}
                 alt="le bassin d'exposition du magasin de saint pierre "
               />
             </li>
@@ -249,7 +256,7 @@ const Home = (props) => {
               <p>📬 12 rue LAMBERT - Chaussée Royale</p>
               <p>📞 0262 02 80 20</p>
               <img
-                src="../../src/assets/images/saint-paul.jpg "
+                src={saintpaul}
                 alt="la deventure du magasin de saint paul"
               />
             </li>
@@ -261,7 +268,7 @@ const Home = (props) => {
               <p>📬 7 Impasse Neptune ZA La Mare </p>
               <p>📞 0262 83 22 87</p>
               <img
-                src="../../src/assets/images/sainte-marie.jpg"
+                src={saintemarie}
                 alt="la deventure du magasin de sainte marie"
               />
             </li>

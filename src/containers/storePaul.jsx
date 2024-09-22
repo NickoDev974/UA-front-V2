@@ -1,4 +1,17 @@
 import React from "react";
+//import images
+
+import facebook from "/src/assets/icons/facebook.svg";
+import instagram from "/src/assets/icons/instagram.svg";
+import gps from "/src/assets/icons/gps.png";
+
+import entreepaul from "/src/assets/images/entree-paul.JPG";
+import batteriePaul from "/src/assets/images/batterie-Paul.jpg";
+import Rayon2Paul from "/src/assets/images/Rayon2-Paul.JPG";
+import Rayon1Paul from "/src/assets/images/Rayon1-Paul.JPG";
+import bassinPaul from "/src/assets/images/bassin-Paul.JPG";
+import Rayon4Paul from "/src/assets/images/Rayon4-Paul.JPG";
+import Rayon3Paul from "/src/assets/images/Rayon3-Paul.JPG";
 
 const StorePaul = () => {
   return (
@@ -9,44 +22,32 @@ const StorePaul = () => {
           <li>
             <a href="https://www.facebook.com/universaquatiquesaintpaul/">
               facebook
-              <img
-                className="logo"
-                src="../../../src/assets/icons/facebook.svg"
-                alt="logo facebook"
-              />
+              <img className="logo" src={facebook} alt="logo facebook" />
             </a>
           </li>
           <li>
             <a href="https://www.instagram.com/univers_aquatique_reunion?igsh=MWx1b2Y2bGx3bGw5aw==">
               Insta
-              <img
-                className="logo"
-                src="../../../src/assets/icons/instagram.svg"
-                alt="logo instagram"
-              />
+              <img className="logo" src={instagram} alt="logo instagram" />
             </a>
           </li>
           <li>
             <a href="https://maps.app.goo.gl/PSu9aVQGJHTF8e3T7">
               Nous trouver
-              <img
-                className="logo"
-                src="../../../src/assets/icons/gps.png"
-                alt="pointeur map gps"
-              />
+              <img className="logo" src={gps} alt="pointeur map gps" />
             </a>
           </li>
         </ul>
         <img
           className="presentation-picture"
-          src="../../../src/assets/images/entree-paul.JPG"
+          src={entreepaul}
           alt="Entree du magasin de saint Paul"
         />
       </article>
       <article className="aquariophilie-Paul">
         <h3>Aquariophilie</h3>
         <img
-          src="../../../src/assets/images/batterie-Paul.jpg"
+          src={batteriePaul}
           alt="rayon aquariophilie du magasin de saint paul"
         />
         <p>
@@ -82,7 +83,7 @@ const StorePaul = () => {
           vous.
         </p>
         <img
-          src="../../../src/assets/images/Rayon2-Paul.JPG"
+          src={Rayon2Paul}
           alt="rayon aquariophilie du magasin de saint paul"
         />
       </article>
@@ -126,15 +127,15 @@ const StorePaul = () => {
         </p>
         <div className="sliderPaul">
           <img
-            src="../../../src/assets/images/Rayon1-Paul.JPG"
+            src={Rayon1Paul}
             alt="rayon aquariophilie du magasin de saint paul"
           />
           <img
-            src="../../../src/assets/images/bassin-Paul.JPG"
+            src={bassinPaul}
             alt="rayon aquariophilie du magasin de saint paul"
           />
           <img
-            src="../../../src/assets/images/Rayon4-Paul.JPG"
+            src={Rayon4Paul}
             alt="rayon aquariophilie du magasin de saint paul"
           />
         </div>
@@ -182,7 +183,7 @@ const StorePaul = () => {
           bien-être sont notre priorité.
         </p>
         <img
-          src="../../../src/assets/images/Rayon3-Paul.JPG"
+          src={Rayon3Paul}
           alt="rayon chien et chat du magasin de saint paul"
         />
       </article>

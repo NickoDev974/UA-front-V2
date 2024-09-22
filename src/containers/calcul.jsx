@@ -1,5 +1,10 @@
 import React, { useState } from "react";
 
+import calculDose from "/src/assets/images/calculs de doses.jpg";
+import CalculVolumeAquarium from "/src/assets/images/calcul-volume-aquarium-1024x576.jpg";
+import aquaRectang from "/src/assets/images/volumeAquarium.jpeg";
+import aquaCilind from "/src/assets/images/volume-cylindre.png";
+
 const Calcul = () => {
   const [longueur, setLongueur] = useState("");
   const [largeur, setLargeur] = useState("");
@@ -78,10 +83,7 @@ const Calcul = () => {
       {/* Traitements */}
       <article className="dosage">
         <h2>Calcul du dosage de médicament pour l'aquarium</h2>
-        <img
-          src="../src/assets/images/calculs de doses.jpg"
-          alt="calcul du dosage traitement"
-        />
+        <img src={calculDose} alt="calcul du dosage traitement" />
         {dosageFinal !== "" && (
           <p>
             Le dosage nécessaire pour votre aquarium est de{" "}
@@ -127,17 +129,11 @@ const Calcul = () => {
       {/* Volumes  */}
       <article className="volume">
         <h2>Calcul du volume</h2>
-        <img
-          src="../src/assets/images/calcul-volume-aquarium-1024x576.jpg"
-          alt="calcul volume d'un aquarium"
-        />
+        <img src={CalculVolumeAquarium} alt="calcul volume d'un aquarium" />
         <div className="volumeAqua">
           <div>
             <h3>Calcul pour aquarium rectangulaire</h3>
-            <img
-              src="../src/assets/images/volumeAquarium.jpeg"
-              alt="calcul volume d'un pavé"
-            />
+            <img src={aquaRectang} alt="calcul volume d'un pavé" />
             {volumeRectangular !== null && (
               <p>
                 Le volume est de <span>{volumeRectangular}</span> Litres.
@@ -179,7 +175,7 @@ const Calcul = () => {
             <h3>Calcul pour aquarium cylindrique</h3>
             <img
               className="imgAquar"
-              src="../src/assets/images/volume-cylindre.png"
+              src={aquaCilind}
               alt="calcul volume d'un cylindre"
             />
             {volumeCylindrical !== null && (

@@ -4,6 +4,8 @@ import { selectProducts } from "../slices/productSlice";
 //import { selectCategory } from "../slices/categorySlice";
 import ArticleDetail from "../components/article-product";
 
+import enconstruction from "/src/assets/images/page-en-construction.png";
+
 const Product = (props) => {
   const produits = useSelector(selectProducts);
   // const categories = useSelector(selectCategory);
@@ -23,8 +25,13 @@ const Product = (props) => {
   return (
     <>
       <section className="tempory">
-        <h2>Univers Aquatique vous proposera bientot sa boutique en ligne</h2>
+        <img
+          src={enconstruction}
+          alt="page en construction"
+          className="construction"
+        />
       </section>
+      {/* section pour affichage des article quand BDD active  */}
       <section className="shop">
         <h2>Univers aquatique vous propose :</h2>
         <div>

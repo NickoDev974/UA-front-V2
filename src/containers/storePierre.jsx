@@ -1,5 +1,25 @@
 import React from "react";
 
+//import images
+
+import facebook from "/src/assets/icons/facebook.svg";
+import instagram from "/src/assets/icons/instagram.svg";
+import gps from "/src/assets/icons/gps.png";
+import bassinCascade from "/src/assets/images/bassinCascade.jpg";
+import bassinVitre from "/src/assets/images/bassinVitre.jpg";
+import koi from "/src/assets/images/koi.jpg";
+import discus from "/src/assets/images/discus.jpg";
+import discusMontage from "/src/assets/images/discusMontage.jpg";
+import anemone from "/src/assets/images/anemone.jpg";
+import videoAnemone from "/src/assets/images/videoAnemone.gif";
+import bacPlantes from "/src/assets/images/bacPlantes.jpg";
+import planteAquatique from "/src/assets/images/planteAquatique.jpg";
+import chien from "/src/assets/images/chien.jpg";
+import chat from "/src/assets/images/chat.jpg";
+import murVegetal from "/src/assets/images/murVegetal.jpg";
+import plantesJardin from "/src/assets/images/plantesJardin.jpeg";
+import planteBassin1 from "/src/assets/images/planteBassin1.JPG";
+
 const StorePierre = () => {
   return (
     <main className="pierre">
@@ -10,33 +30,24 @@ const StorePierre = () => {
           <li>
             <a href="https://www.facebook.com/univers.aquatique.bassin.aquarium.reunion.Recifal">
               facebook
-              <img
-                src="../../../src/assets/icons/facebook.svg"
-                alt="logo facebook"
-              />
+              <img src={facebook} alt="logo facebook" />
             </a>
           </li>
           <li>
             <a href="https://www.instagram.com/univers_aquatique_reunion?igsh=MWx1b2Y2bGx3bGw5aw==">
               Insta
-              <img
-                src="../../../src/assets/icons/instagram.svg"
-                alt="logo instagram"
-              />
+              <img src={instagram} alt="logo instagram" />
             </a>
           </li>
           <li>
             <a href="https://maps.app.goo.gl/YxMDsoKRschNYycn7">
               Nous trouver
-              <img
-                src="../../../src/assets/icons/gps.png"
-                alt="pointeur map gps"
-              />
+              <img src={gps} alt="pointeur map gps" />
             </a>
           </li>
         </ul>
         <img
-          src="../../../src/assets/images/bassinCascade.jpg"
+          src={bassinCascade}
           alt="bassin d'exposition du magasin"
           id="photoPresentation"
         />
@@ -69,11 +80,8 @@ const StorePierre = () => {
             votre projet de bassin de jardin.
           </p>
 
-          <img
-            src="../../../src/assets/images/bassinVitre.jpg"
-            alt="bassin vitrée du magasin"
-          />
-          <img src="../../../src/assets/images/koi.jpg" alt="Une carpe koi" />
+          <img src={bassinVitre} alt="bassin vitrée du magasin" />
+          <img src={koi} alt="Une carpe koi" />
         </article>
         <article>
           <h3>Aquarium</h3>
@@ -101,12 +109,9 @@ const StorePierre = () => {
               sélection soigneusement choisie est là pour vous accompagner à
               chaque étape de votre voyage aquatique.
             </p>
+            <img src={discus} alt="Un groupe de discus dans un aquarium" />
             <img
-              src="../../../src/assets/images/discus.jpg"
-              alt="Un groupe de discus dans un aquarium"
-            />
-            <img
-              src="../../../src/assets/images/discusMontage.jpg"
+              src={discusMontage}
               alt="Montage de plusieurs photos de discus"
             />
           </article>
@@ -133,11 +138,11 @@ const StorePierre = () => {
               immersive et enrichissante.
             </p>
             <img
-              src="../../../src/assets/images/anemone.jpg"
+              src={anemone}
               alt="anemone avec son couple de clowns snowFlakes"
             />
             <img
-              src="../../../src/assets/images/videoAnemone.gif"
+              src={videoAnemone}
               alt="gif d'une anemone avec beaucoup de poissons clown"
             />
           </article>
@@ -163,13 +168,10 @@ const StorePierre = () => {
               visions artistiques dans votre propre aquarium.
             </p>
             <img
-              src="../../../src/assets/images/bacPlantes.jpg"
+              src={bacPlantes}
               alt="Aquarium de vente de plantes aquatiques"
             />
-            <img
-              src="../../../src/assets/images/planteAquatique.jpg"
-              alt="plante aquatique en fleur"
-            />
+            <img src={planteAquatique} alt="plante aquatique en fleur" />
           </article>
         </article>
         <article>
@@ -194,14 +196,8 @@ const StorePierre = () => {
             la famille, et ils méritent le meilleur.
           </p>
           <div>
-            <img
-              src="../../../src/assets/images/chien.jpg"
-              alt="Selection de produits pour chien "
-            />
-            <img
-              src="../../../src/assets/images/chat.jpg"
-              alt="Selection de produit pour chat "
-            />
+            <img src={chien} alt="Selection de produits pour chien " />
+            <img src={chat} alt="Selection de produit pour chat " />
           </div>
         </article>
         <article>
@@ -232,19 +228,10 @@ const StorePierre = () => {
             style et créativité.
           </p>
           <div className="sliderPierre">
-            <img
-              src="../../../src/assets/images/murVegetal.jpg"
-              alt="Mur végétal du magasin "
-            />
-            <img
-              src="../../../src/assets/images/plantesJardin.jpeg"
-              alt="Présentoir plantes vertes "
-            />
+            <img src={murVegetal} alt="Mur végétal du magasin " />
+            <img src={plantesJardin} alt="Présentoir plantes vertes " />
 
-            <img
-              src="../../../src/assets/images/planteBassin1.JPG"
-              alt="Plantes de berges de collection"
-            />
+            <img src={planteBassin1} alt="Plantes de berges de collection" />
             {/* <img
               src="../../../src/assets/images/perlite.JPG"
               alt="Perlite pour plantes  "

@@ -8,6 +8,8 @@ import { faTrash } from "@fortawesome/free-solid-svg-icons";
 import { saveOneOrder } from "../api/order";
 import { updateProductStockInDatabase } from "../api/article";
 
+import cady from "/src/assets/images/panierVide.jpeg";
+
 const Basket = (props) => {
   const basket = useSelector(selectBasket);
   const user = useSelector(selectUser);
@@ -189,10 +191,7 @@ const Basket = (props) => {
       ) : (
         <p id="basketEmpty">
           Votre panier est vide <br />
-          <img
-            src="../../src/assets/images/panierVide.jpeg"
-            alt="panier vide"
-          />
+          <img src={cady} alt="panier vide" />
         </p>
       )}
       {/* Total Price Row */}

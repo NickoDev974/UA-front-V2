@@ -1,22 +1,24 @@
 import React from "react";
 import Carousel from "./carousel";
+//import images
+
+import facebook from "/src/assets/icons/facebook.svg";
+import instagram from "/src/assets/icons/instagram.svg";
+import gps from "/src/assets/icons/gps.png";
+
+import sainteMarie1 from "/src/assets/images/sainteMarie1.JPG";
+import sainteMarie2 from "/src/assets/images/sainteMarie2.JPG";
+import sainteMarie3 from "/src/assets/images/sainteMarie3.JPG";
+import sainteMarie4 from "/src/assets/images/sainteMarie4.JPG";
+import sainteMarie5 from "/src/assets/images/sainteMarie5.JPG";
 
 const StoreMarie = () => {
   const images = [
-    { src: "../../src/assets/images/sainteMarie1.JPG", alt: "Rayon Bassin  " },
-    {
-      src: "../../src/assets/images/sainteMarie2.JPG",
-      alt: "Bassin d'exposition plan large",
-    },
-    {
-      src: "../../src/assets/images/sainteMarie3.JPG",
-      alt: "Bassin d'exposition plan serré ",
-    },
-    { src: "../../src/assets/images/sainteMarie4.JPG", alt: "Rayon aquarium " },
-    {
-      src: "../../src/assets/images/sainteMarie5.JPG",
-      alt: "Rayon poissons exotiques ",
-    },
+    { src: sainteMarie1, alt: "Rayon Bassin" },
+    { src: sainteMarie2, alt: "Bassin d'exposition plan large" },
+    { src: sainteMarie3, alt: "Bassin d'exposition plan serré" },
+    { src: sainteMarie4, alt: "Rayon aquarium" },
+    { src: sainteMarie5, alt: "Rayon poissons exotiques" },
   ];
 
   return (
@@ -27,28 +29,19 @@ const StoreMarie = () => {
           <li>
             <a href="https://www.facebook.com/p/Univers-aquatique-Sainte-Marie-100086697707414/">
               facebook
-              <img
-                src="../../../src/assets/icons/facebook.svg"
-                alt="logo facebook"
-              />
+              <img src={facebook} alt="logo facebook" />
             </a>
           </li>
           <li>
             <a href="https://www.instagram.com/univers_aquatique_reunion?igsh=MWx1b2Y2bGx3bGw5aw==">
               Insta
-              <img
-                src="../../../src/assets/icons/instagram.svg"
-                alt="logo instagram"
-              />
+              <img src={instagram} alt="logo instagram" />
             </a>
           </li>
           <li>
             <a href="https://maps.app.goo.gl/nBHaTK9XfGL1k9z46">
               Nous trouver
-              <img
-                src="../../../src/assets/icons/gps.png"
-                alt="pointeur map gps"
-              />
+              <img src={gps} alt="pointeur map gps" />
             </a>
           </li>
         </ul>

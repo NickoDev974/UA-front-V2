@@ -60,10 +60,10 @@ const Header = (props) => {
             <li onClick={closeMenu}>
               <Link to="/calcul">
                 <FontAwesomeIcon icon={faCalculator} />
-                -Calcul Volume
+                -Calcul
               </Link>
             </li>
-            <li onClick={closeMenu}>
+            {/* <li onClick={closeMenu}>
               {user.isLogged === false ? (
                 <Link to="/register">-S'enregistrer</Link>
               ) : (
@@ -82,7 +82,7 @@ const Header = (props) => {
                   -Logout
                 </a>
               )}
-            </li>
+            </li> */}
             <li onClick={closeMenu}>
               <Link to="/basket">
                 <FontAwesomeIcon icon={faCartShopping} />

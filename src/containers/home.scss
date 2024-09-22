@@ -11,7 +11,7 @@
   }
 
   img {
-    max-width: 400px;
+    max-width: 100%;
   }
   .brandLogo {
     max-width: 100px;
@@ -33,10 +33,14 @@
   ul {
     list-style-type: none;
   }
+  .conteneurA2 li {
+    margin: 1rem;
+  }
   .Shops li {
     border: solid 5px blue;
     border-radius: 20px;
     box-shadow: inset black 5px 5px 10px;
+
     img {
       max-width: 95%;
     }
@@ -47,47 +51,51 @@
       color: white;
     }
   }
+  // .conteneurA2 {
+  //   display: flex;
+  //   flex-direction: column;
+  // }
   //------------------tablette ----------------------------
-  @media screen and (min-width: 426px) {
+  @media screen and (min-width: 443px) {
     body {
       width: 768px;
     }
     h2 {
       text-shadow: rgb(73, 72, 72) 5px 5px 10px;
     }
-    img {
-      max-width: 760px;
-    }
-    .article1 {
-      position: relative;
-      text-align: left;
-    }
+    // img {
+    //   max-width: 760px;
+    // }
+    // .article1 {
+    //   position: relative;
+    //   text-align: left;
+    // }
 
-    .article1 h3 {
-      text-align: center;
-      margin-bottom: 1rem;
-    }
+    // .article1 h3 {
+    //   text-align: center;
+    //   margin-bottom: 1rem;
+    // }
 
-    .article1 img {
-      width: 100%; /* L'image prend toute la largeur de l'écran */
-      height: auto; /* Conserve les proportions de l'image */
-    }
+    // .article1 img {
+    //   width: 100%; /* L'image prend toute la largeur de l'écran */
+    //   height: auto; /* Conserve les proportions de l'image */
+    // }
 
-    .article1 p {
-      position: absolute; /* Positionne le texte sur l'image */
-      top: 10%; /* Ajuste la position verticale du texte */
-      right: 5%; /* Ajuste la position horizontale du texte */
-      color: white; /* Texte en blanc */
-      width: 40%; /* Largeur du paragraphe sur l'image (peut être ajustée) */
-      background-color: rgba(
-        0,
-        0,
-        0,
-        0.7
-      ); /* Optionnel : fond semi-transparent pour une meilleure lisibilité */
-      padding: 1rem; /* Ajoute un peu de padding autour du texte */
-      box-sizing: border-box;
-    }
+    // .article1 p {
+    //   position: absolute; /* Positionne le texte sur l'image */
+    //   top: 10%; /* Ajuste la position verticale du texte */
+    //   right: 5%; /* Ajuste la position horizontale du texte */
+    //   color: white; /* Texte en blanc */
+    //   width: 60%; /* Largeur du paragraphe sur l'image (peut être ajustée) */
+    //   background-color: rgba(
+    //     0,
+    //     0,
+    //     0,
+    //     0.7
+    //   ); /* Optionnel : fond semi-transparent pour une meilleure lisibilité */
+    //   padding: 1rem; /* Ajoute un peu de padding autour du texte */
+    //   box-sizing: border-box;
+    // }
     .article2 ul img {
       max-width: 95%;
     }
@@ -142,6 +150,39 @@
       li {
         margin: 2rem;
       }
+    }
+    // img {
+    //   max-width: 760px;
+    // }
+    .article1 {
+      position: relative;
+      text-align: left;
+    }
+
+    .article1 h3 {
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+
+    .article1 img {
+      width: 100%; /* L'image prend toute la largeur de l'écran */
+      height: auto; /* Conserve les proportions de l'image */
+    }
+
+    .article1 p {
+      position: absolute; /* Positionne le texte sur l'image */
+      top: 10%; /* Ajuste la position verticale du texte */
+      right: 5%; /* Ajuste la position horizontale du texte */
+      color: white; /* Texte en blanc */
+      width: 60%; /* Largeur du paragraphe sur l'image (peut être ajustée) */
+      background-color: rgba(
+        0,
+        0,
+        0,
+        0.7
+      ); /* Optionnel : fond semi-transparent pour une meilleure lisibilité */
+      padding: 1rem; /* Ajoute un peu de padding autour du texte */
+      box-sizing: border-box;
     }
   }
 }

@@ -3,6 +3,11 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPhone } from "@fortawesome/free-solid-svg-icons";
 import CGV from "../containers/cgv";
 
+//import images
+
+import facebook from "/src/assets/icons/facebook.svg";
+import instagram from "/src/assets/icons/instagram.svg";
+
 const Footer = () => {
   return (
     <footer className="footer">
@@ -13,18 +18,12 @@ const Footer = () => {
             <ul>
               <li>
                 <a href="https://www.facebook.com/univers.aquatique.bassin.aquarium.reunion.Recifal">
-                  <img
-                    className="facebook"
-                    src="../../../src/assets/icons/facebook.svg"
-                  />
+                  <img className="facebook" src={facebook} />
                 </a>
               </li>
               <li>
                 <a href="https://www.instagram.com/univers_aquatique_reunion?igsh=MWx1b2Y2bGx3bGw5aw==">
-                  <img
-                    className="insta"
-                    src="../../../src/assets/icons/instagram.svg"
-                  />
+                  <img className="insta" src={instagram} />
                 </a>
               </li>
             </ul>
