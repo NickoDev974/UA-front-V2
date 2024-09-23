@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="refresh" content="0; url=/" />
+    <title>Page Not Found</title>
+    <script>
+      // Rediriger toutes les routes 404 vers le routing client
+      var pathname = window.location.pathname;
+      window.location.href = "/UA-front-V2" + "#" + pathname;
+    </script>
+  </head>
+  <body>
+    <h1>Page Not Found</h1>
+    <p>Redirecting to the application...</p>
+  </body>
+</html>
