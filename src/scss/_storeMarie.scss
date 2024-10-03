@@ -73,24 +73,33 @@
 .prev {
   left: 0;
 }
+.prev:hover {
+  background-color: transparent;
+}
 
 .next {
   right: 0;
+}
+.next:hover {
+  background-color: transparent;
 }
 
 @media screen and (min-width: 769px) {
   .carousel {
     .slide {
       max-width: 600px;
+      max-height: 700px;
       border-radius: 10px;
-      //max-height: 500px;
+      display: flex;
       justify-content: center;
+      align-items: center;
+      overflow: hidden; /* Cache l'excédent d'image si nécessaire */
+    }
 
-      //background-color: black;
-      // img {
-      //   max-width: auto;
-      //   max-height: 80%;
-      // }
+    .slide img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
     }
   }
 }
