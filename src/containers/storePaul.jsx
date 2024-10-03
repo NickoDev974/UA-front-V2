@@ -5,7 +5,7 @@ import facebook from "/src/assets/icons/facebook.svg";
 import instagram from "/src/assets/icons/instagram.svg";
 import gps from "/src/assets/icons/gps.png";
 
-import entreepaul from "/src/assets/images/entree-paul.JPG";
+import entreepaul from "/src/assets/images/Bac-expo-stpaul.JPG";
 import batteriePaul from "/src/assets/images/batterie-Paul.jpg";
 import Rayon2Paul from "/src/assets/images/Rayon2-Paul.JPG";
 import Rayon1Paul from "/src/assets/images/Rayon1-Paul.JPG";
